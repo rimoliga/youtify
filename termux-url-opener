@@ -8,10 +8,11 @@ echo "Opening URL"
 if [[ $URL == *"open.spotify.com"* ]]; then
   echo "Downloading Song"
   spotdl --song $URL
-  read -n 1 -s -p "Press any key to exit..."
-fi
-if  [[ $URL == *"youtube.com"* ]]; then
+elif  [[ $URL == *"youtu.be"* || $URL == *"youtube.com"*]]; then
   echo "Downloading Video"
   youtube-dl $URL
-  read -n 1 -s -p "Press any key to exit..."
+else
+  echo "No downloader for this URL type"
 fi
+
+read -n 1 -s -p "Press any key to exit..."
