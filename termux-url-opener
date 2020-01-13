@@ -1,0 +1,15 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Get the URL
+URL=$1
+
+
+# Cheks if its Youtube or Spotify URL and downloads it
+if [[ $URL == *"open.spotify.com"* ]]; then
+  spotdl --song $URL
+  read -n 1 -s -p "Press any key to exit..."
+fi
+if  [[ $URL == *"youtube.com"* ]]; then
+  youtube-dl $URL
+  read -n 1 -s -p "Press any key to exit..."
+fi
