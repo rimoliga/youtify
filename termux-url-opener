@@ -5,7 +5,7 @@ URL=$1
 echo "Opening URL"
 
 # Cheks if its Youtube or Spotify URL and downloads it
-if [ $URL == *"open.spotify.com"* ] ; then
+if [[ $URL == *"open.spotify.com"* ]] ; then
   echo "Downloading Song"
   spotdl --song $URL
 elif  [[ $URL == *"youtu.be"* || $URL == *"youtube.com"* ]]; then
