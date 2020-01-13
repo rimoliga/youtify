@@ -1,0 +1,5 @@
+
+RES=1080 #Choose maximum resolution changing this
+
+--no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube-downloads/%(title)s.%(ext)s -f "best[height<=$RES]"
+
