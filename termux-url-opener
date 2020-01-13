@@ -2,14 +2,16 @@
 
 # Get the URL
 URL=$1
-
+echo "Opening URL"
 
 # Cheks if its Youtube or Spotify URL and downloads it
 if [[ $URL == *"open.spotify.com"* ]]; then
+  echo "Downloading Song"
   spotdl --song $URL
   read -n 1 -s -p "Press any key to exit..."
 fi
 if  [[ $URL == *"youtube.com"* ]]; then
+  echo "Downloading Video"
   youtube-dl $URL
   read -n 1 -s -p "Press any key to exit..."
 fi
