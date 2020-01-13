@@ -8,6 +8,7 @@ pkg install git -y; git clone https://github.com/gabosxpiens/youtify.git; cd you
 **Instructions of use**
 
 
-After installing you can go to any youtube video or spotify song and share it in the app to termux, after finishing downloading the video will be in your internal storage inside the folder "Youtube-downloads" and the songs in "Music" folder
+After installing you can go to any youtube video or spotify song and share it in the app to termux, after finishing downloading the video will be in your internal storage inside the folder "Youtube-downloads" and the songs in "Music" folder.
+
 
 This script uses spotdl ( https://github.com/ritiek/spotify-downloader )
