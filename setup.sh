@@ -40,7 +40,7 @@ fi
 #Creates folder where the music will be downloaded
 
 rm ~/.config/spotdl/config.yml
-cp config ~/.config/spotdl
+cp config.yml ~/.config/spotdl
 
 #~Ends spotdl configuration~
 
