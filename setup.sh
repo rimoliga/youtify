@@ -40,7 +40,7 @@ fi
 #Creates folder where the music will be downloaded
 
 if [[ -e /data/data/com.termux/files/home/.config/spotdl/config.yml ]]; then
-  mv config.yml config.backup
+  mv ~/.config/spotdl/config.yml ~/.config/spotdl/config.backup
 fi 
 
 if [[ ! -d /data/data/com.termux/files/home/.config/spotdl ]]; then
