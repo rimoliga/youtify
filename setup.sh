@@ -44,7 +44,7 @@ if [[ -e /data/data/com.termux/files/home/.config/spotdl/config.yml ]]; then
 fi 
 
 if [[ ! -d /data/data/com.termux/files/home/.config/spotdl ]]; then
-  mkdir /data/data/com.termux/files/home/spotdl
+  mkdir /data/data/com.termux/files/home/.config/spotdl
 fi 
 
 
