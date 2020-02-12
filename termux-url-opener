@@ -1,8 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 # Get the URL
-INPUT=$1
-URL=$(echo $1 | grep -Eo 'http[s]*://[^ >]+' | head -1)
+URL=$1
 echo "Opening URL"
 
 # Cheks if its Youtube or Spotify URL and downloads it
