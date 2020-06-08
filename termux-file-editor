@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+URL=$(sed -n 2p $1)
+~/bin/termux-url-opener $URL
+
+#clean
+rm tempfile
+rm $1
