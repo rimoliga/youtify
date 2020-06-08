@@ -24,6 +24,7 @@ Write anything you want and press enter (This creates a file that will be automa
 ![alt text](https://i.imgur.com/AJQCXx7.jpg)
 
 Now you can download Youtube videos with subtitles!
+(Vlc player recommended for subs)
 
 ![alt text](https://i.imgur.com/YGi5K8F.jpg)
 
@@ -34,10 +35,12 @@ Now you can download Youtube videos with subtitles!
 
 **Problems**
 
-In some versions of the Spotify app when you share a song to termux, spotify shares a text like "Here is a song for you (song link)". This makes the termux-url-opener fail because termux doesn't recognize this as a link and displays a window that says something like "Save file in ~/downloads"
+This was partialy solved, you can write any (non-empty) filename an press enter. Any help to skip the "Save file in ~/donwloads/" message will be welcome.
+
+~~In some versions of the Spotify app when you share a song to termux, spotify shares a text like "Here is a song for you (song link)". This makes the termux-url-opener fail because termux doesn't recognize this as a link and displays a window that says something like "Save file in ~/downloads"
 I'm trying to fix this but at the moment this config is not working with the latest spotify version (8.5.43.724 01/29/2020).
 You can still download the spotify song using spotdl and the link of the spotify song. For this when sharing in spotify select "copy link" and then go to termux and write:
 
-spotdl -s (Paste shared link here)
+~~spotdl -s (Paste shared link here)
 
-This will download the song in the Music folder on the internal storage
+~~This will download the song in the Music folder on the internal storage
