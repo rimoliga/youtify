@@ -27,8 +27,14 @@ elif  [[ $URL == *"youtu.be"* || $URL == *"youtube.com"* ]]; then
   formatvar=0
   read -p $'What do you want to download \n(Select the number and press enter) \n 1) Video \n 2) Audio \n' formatvar
   if [[ $formatvar == 1 ]]; then
-    echo 'Downloading Video'
-    youtube-dl $URL
+    read -p $'Do you want to download the subtitles for this video? \n(Select the number and press enter) \n 1) Yes \n 2) No \n' formatvar
+    if [[ $formatvar == 1 ]]; then
+      echo 'Downloading Video with subtitles'
+      youtube-dl --all-subs $URL      
+    elif [[ $formatvar == 2 ]]; then
+      echo 'Downloading Video'
+      youtube-dl $URL
+    fi
   elif [[ $formatvar == 2 ]]; then
       echo 'downloading Audio'
       youtube-dl -x --audio-format 'mp3' $URL
