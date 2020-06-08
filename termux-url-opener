@@ -20,8 +20,8 @@ if [[ $URL == *"open.spotify.com"* ]] ; then
   if  [[ $URL == *"album"* ]]; then
     echo "Downloading Album"
     spotdl --album $URL --write-to album.txt
-    spotdl --list playlist.txt
-    rm -rf playlist.txt
+    spotdl --list album.txt
+    rm -rf album.txt
   fi
 elif  [[ $URL == *"youtu.be"* || $URL == *"youtube.com"* ]]; then
   formatvar=0
