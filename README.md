@@ -15,21 +15,21 @@ This script uses spotdl ( https://github.com/ritiek/spotify-downloader )
 
 To share songs, albums and playlist from spotify you will se somtehing like the next image:
 
-https://i.imgur.com/aSEIGCy.jpg
+![alt text](https://i.imgur.com/aSEIGCy.jpg)
 
 Write anything you want and press enter (This creates a file that will be automatically deleted)
 
-https://i.imgur.com/093zkht.jpg
+![alt text](https://i.imgur.com/093zkht.jpg)
 
-https://i.imgur.com/AJQCXx7.jpg
+![alt text](https://i.imgur.com/AJQCXx7.jpg)
 
 Now you can download Youtube videos with subtitles!
 
-https://i.imgur.com/YGi5K8F.jpg
+![alt text](https://i.imgur.com/YGi5K8F.jpg)
 
-https://i.imgur.com/tLGItLI.jpg
+![alt text](https://i.imgur.com/tLGItLI.jpg)
 
-https://i.imgur.com/hMmpipL.jpg
+![alt text](https://i.imgur.com/hMmpipL.jpg)
 
 
 **Problems**
