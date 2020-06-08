@@ -6,8 +6,23 @@ echo "Opening URL"
 
 # Cheks if its Youtube or Spotify URL and downloads it
 if [[ $URL == *"open.spotify.com"* ]] ; then
-  echo "Downloading Song"
-  spotdl --song $URL
+  echo "Spotify link detected"
+  if [[ $URL == *"playlist"* ]]; then
+    echo "Downloading Playlist"
+    spotdl --playlist $URL --write-to playlist.txt
+    spotdl --list playlist.txt
+    rm -rf playlist.txt
+  fi
+  if [[ $URL == *"track"* ]]; then
+    echo "Downloading Song"
+    spotdl --song $URL
+  fi
+  if  [[ $URL == *"album"* ]]; then
+    echo "Downloading Album"
+    spotdl --album $URL --write-to album.txt
+    spotdl --list playlist.txt
+    rm -rf playlist.txt
+  fi
 elif  [[ $URL == *"youtu.be"* || $URL == *"youtube.com"* ]]; then
   formatvar=0
   read -p $'What do you want to download \n(Select the number and press enter) \n 1) Video \n 2) Audio \n' formatvar
