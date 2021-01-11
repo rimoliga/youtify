@@ -1,8 +1,7 @@
 # youtify
 Installs and configures youtube-dl and spotdl for music and videos downloading in android termux
 
-**_(You can buy me a coffe donating with BAT using Brave browser or using the next referal link to download it: https://brave.com/gab242 
-You can also 🌟 this repo)_**
+**_(You can buy me a coffe donating with BAT using Brave browser You can also 🌟 this repo)_**
 
 You can simply install this downloader by copy an pasting the next lines of code after a clean termux install (you can install it after installing other programs or repositories but I don garantize it to work):
 ```
