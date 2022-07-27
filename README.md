@@ -1,4 +1,16 @@
 # youtify
+
+DEPRECATED
+
+This is no longer working due to changes in the depending libraries, I will make an up to date veesion when I have some time.
+Feel free to contact or make your own version.
+email: rimoliga@gmail.comwt
+
+
+
+
+
+
 Installs and configures youtube-dl and spotdl for music and videos downloading in android termux
 
 **_(You can buy me a coffe donating with BAT using Brave browser You can also 🌟 this repo)_**
